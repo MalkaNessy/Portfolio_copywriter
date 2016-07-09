@@ -2,13 +2,10 @@
 GENERAL
 *****************************/
 
-/* site body */
 body {
   background-color:#fff;
-  color: #999;
-}
-
-body {
+  color: #599a68;
+  /*#999;*/
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -21,6 +18,7 @@ body {
 
 a {
   text-decoration: none;
+  color:#6ab47b;
 }
 
 img {
@@ -42,6 +40,9 @@ header {
   margin: 0 0 30px 0;
   padding: 5px 0 0 0;
   width: 100%;
+  
+  background: #6ab47b; 
+  border-color:#599a68;
 }
 
 #logo {
@@ -69,17 +70,6 @@ h2 {
   font-weight: normal;
 }
 
-/* green header */
-header {
-  background: #6ab47b; 
-  border-color:#599a68;
-}
-
-
-/* links color */
-a {
-  color:#6ab47b;
-}
 
 
 
@@ -90,13 +80,12 @@ NAVIGATION
 /* nav background on mobile */
 nav {
   background: #599a68;
-}
-
-nav {
+  
   text-align: center;
   padding: 10px 0;
   margin: 20px 0 0;
 }
+
 
 nav ul {
   list-style: none;
@@ -113,12 +102,12 @@ nav a {
   padding: 15px 10px;
 }
 
-/* nav lonks color */
+/* nav links color */
 nav a, nav a:visited {
   color: #fff;
 }
 
-/* selected nav lonks color */
+/* selected nav links color */
 nav a.selected, nav a:hover {
   color: #32673f;
 }
@@ -142,12 +131,17 @@ PAGE: PORTFOLIO
   background-color: #f5f5f5;
   color: #bdc3c7;
 }
+/*
+#gallery li:nth-child(2n+1) {
+    clear: left;
+  } 
+*/
 
 #gallery li a p{
   margin: 0;
   padding: 5%;
   font-size: 0.75em;
-  color: #bdc3c7;
+  color: #599a68;
 }
 
 /****************************
