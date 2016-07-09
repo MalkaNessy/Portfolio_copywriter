@@ -7,8 +7,9 @@ body {
 	margin: 0 auto;
   background-color:#fff;
   color: #599a68;
+  font-family: 'Verdana', sans-serif;
   /*#999;*/
-  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
 }
 
 
@@ -16,6 +17,7 @@ body {
   max-width: 940px;
   margin: 0 auto;
   padding: 0 5%;
+  
 }
 
 a {
