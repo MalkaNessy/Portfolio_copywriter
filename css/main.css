@@ -208,7 +208,7 @@ PAGE: CONTACT
 }
 
 .contact-info li.twitter a {
-    background-image: url('../img/twitter.png');
+    background-image: url('../img/facebook-wrap.png');
 }
 
 
@@ -223,7 +223,7 @@ footer {
   text-align: center;
   clear: both;
   padding-top: 50px;
-  color: #ccc;
+  color: #999;
 }
 
 .social-icon {
