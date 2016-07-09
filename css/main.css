@@ -57,7 +57,8 @@ h1,h2 {
 
 
 h1 {
-  font-family: 'Changa One', sans-serif;
+  /*font-family: 'Verdana', sans-serif;*/
+ /*font-family: 'Changa One', sans-serif;*/
   margin: 15px 0;
   font-size: 1.75em;
   font-weight: normal; 
@@ -98,7 +99,7 @@ nav li {
 }
 
 nav a {
-  font-weight: 800;
+  font-weight: 400;
   padding: 15px 10px;
 }
 
