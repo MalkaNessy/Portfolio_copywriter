@@ -116,7 +116,15 @@ nav a.selected, nav a:hover {
 PAGE: PORTFOLIO
 *****************************/
 
+#topic  {
+	background-color: ##e7e4e4;
+    text-align: center;
+	padding: 0;
+}
 
+#topic h3 {
+	font-weight: 800;
+}
 
 #gallery {
   margin: 0;
