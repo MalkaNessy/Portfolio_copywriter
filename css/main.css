@@ -3,6 +3,8 @@ GENERAL
 *****************************/
 
 body {
+	max-width: 940px;
+	margin: 0 auto;
   background-color:#fff;
   color: #599a68;
   /*#999;*/
@@ -35,15 +37,20 @@ h3 {
 HEADER
 *****************************/
 
+
 header {
+  
   float: left;
   margin: 0 0 30px 0;
   padding: 5px 0 0 0;
   width: 100%;
   
+  
   background: #6ab47b; 
   border-color:#599a68;
 }
+
+
 
 #logo {
   text-align: center;
@@ -118,6 +125,7 @@ PAGE: PORTFOLIO
 *****************************/
 
 #topic  {
+	
 	background-color: ##e7e4e4;
     text-align: center;
 	padding: 0;
