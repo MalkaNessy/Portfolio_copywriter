@@ -123,7 +123,9 @@ PAGE: PORTFOLIO
 }
 
 #topic h3 {
-	font-weight: 800;
+	
+	font-family: 'Meie Script';
+	font-size: 2em;
 }
 
 #gallery {
