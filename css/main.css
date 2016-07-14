@@ -130,7 +130,6 @@ PAGE: PORTFOLIO
 *****************************/
 
 #topic  {
-	
 	background-color: ##e7e4e4;
     text-align: center;
 	padding: 0;
@@ -138,7 +137,7 @@ PAGE: PORTFOLIO
 
 #topic h3 {
 	font-family: 'Meie Script';
-	font-size: 2em;
+	font-size: 1.8em;
 }
 
 #gallery {
