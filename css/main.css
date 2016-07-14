@@ -6,7 +6,7 @@ body {
 	max-width: 940px;
 	margin: 0 auto;
   background-color:#fff;
-  color: #599a68;
+  color: #6ab47b;
   font-family: 'Verdana', sans-serif;
   /*background-image: url('../img/paper.jpg');
   background-size: 200%;
@@ -166,6 +166,45 @@ PAGE: PORTFOLIO
   font-size: 0.85em;
   color: #599a68;
 }
+
+
+
+/****************************
+PAGE: EXAMPLE
+*****************************/
+
+#about {
+	width: 60%;
+	/* background-color: yellow; */
+	padding-bottom: 0.5em;
+	font-style: italic;
+
+}
+
+.text-about {
+	/* background-color: yellow; */
+	border-left: 80px solid tan;
+	padding:0 0.8em;
+	line-height: 1.2;
+	text-align: justify;
+	color: darkolivegreen;
+	
+}
+
+.italic {
+	font-style: italic;
+	
+}
+
+h4 {
+	font-size: 0.8em;
+	color: #6ab47b;
+    border-bottom: 1px solid #6ab47b;
+    padding: 4px;	
+	
+}
+
+
 
 /****************************
 PAGE: ABOUT
