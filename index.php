@@ -22,20 +22,20 @@ $current_row = mysql_fetch_array($current_res);
 if (!($current_row)) {
 	die('Page not found ' );
 }
-
+$result = mysql_query("SELECT * FROM examples");
 
 $menu = '';
-$navresult = mysql_query("SELECT * FROM nav");
 
- while ($navrow = mysql_fetch_array($navresult))
+ while ($row = mysql_fetch_array($result))
 	{
 		$class ='';
-		if ($current_row['title_url'] == $navrow['title_url'] ){
+		if ($current_row['title_url'] == $row['title_url'] ){
 			$class = 'class="selected"';
 		}
-		$menu =  $menu. '<li><a href="'.'index.php?page='.$row['title_url'].'" '.$class.' >'.$navrow['button_name'].'</a>
+		if ($row['nav']){
+		$menu =  $menu. '<li><a href="'.'index.php?page='.$row['title_url'].'" '.$class.' >'.$row['button_name'].'</a>
 					
-				</li>';
+		</li>';}
 	}; 
 	
 $menu='<nav><ul>'.$menu.'</ul></nav> ';	
