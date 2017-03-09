@@ -4,7 +4,7 @@ $link = dbconnect();
 
 
 //var_dump($_POST);
-$sql = 'UPDATE lectures'.
+$sql = 'UPDATE examples'.
 ' SET title_url = "'. 
 mysql_real_escape_string($_POST["title_url"])  .'"'.  
 ' , title = "'. 
@@ -13,10 +13,8 @@ mysql_real_escape_string($_POST["title"])  .'"'.
 mysql_real_escape_string($_POST["content"])  .'"'. 
 ' , button_name = "'. 
 mysql_real_escape_string($_POST["button_name"])  .'"'.
-' , short = "'. 
-mysql_real_escape_string($_POST["short"])  .'"'.
-' , more = "'. 
-mysql_real_escape_string($_POST["more"])  .'"'.       
+
+    
 ' WHERE ID = "'.
 mysql_real_escape_string($_POST["ID"])  .'"
 ';
