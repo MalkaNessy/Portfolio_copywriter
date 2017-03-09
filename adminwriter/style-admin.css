@@ -1,0 +1,58 @@
+/*админка к сайту по лекциям*/
+
+body {
+	background-color: #eee8aa;
+	width: 85%;
+	margin: 15px auto;
+}
+
+/*List page*/
+
+table {
+	margin: 8% auto;
+	font-size: 14px;
+	background-color: #e5e1b2 ;
+	border:16px groove #e5e1b2 ;
+	border-radius: 5px;
+	/* margin-top: 4%; */
+	padding: 10px;
+}
+th {
+	padding-bottom: 15px;
+}
+td{
+padding: 5px;
+border:1px solid #e5e1b2 ;
+}
+
+table a {
+	text-decoration: none;
+	color: green;
+	font-weight: 600;
+}
+
+table a:hover {
+	text-decoration: underline;
+}
+
+
+/*Form page*/
+
+span.formname {
+    color: DarkGreen;
+font-weight: bold;
+font-size: 18px;
+line-height: 1.6em;
+}
+
+form {
+	background-color: #e5e1b2 ;
+	border:16px groove #e5e1b2 ;
+	border-radius: 5px;
+	/* margin-top: 4%; */
+	padding: 10px;
+}
+
+form span {
+	margin-bottom: 20px;
+}

@@ -130,7 +130,7 @@ PAGE: PORTFOLIO
 *****************************/
 
 #topic  {
-	background-color: ##e7e4e4;
+	/* background-color: #e7e4e4; */
     text-align: center;
 	padding: 0;
 }
@@ -174,7 +174,7 @@ PAGE: PORTFOLIO
 PAGE: EXAMPLE
 *****************************/
 
-#about {
+#title {
 	width: 60%;
 	/* background-color: yellow; */
 	padding-bottom: 0.5em;
@@ -182,7 +182,7 @@ PAGE: EXAMPLE
 
 }
 
-.text-about {
+.content {
 	/* background-color: yellow; */
 	border-left: 80px solid tan;
 	padding:0 0.8em;
@@ -192,7 +192,7 @@ PAGE: EXAMPLE
 	
 }
 
-.italic {
+.intro {
 	font-style: italic;
 	
 }
