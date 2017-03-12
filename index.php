@@ -51,7 +51,7 @@ $includes = '<link rel="stylesheet" href="css/normalize.css" >'.
 
 $body = '<header>
 	    <a href="" id="logo">
-        <h1>Малка hjhjhjКорец</h1>
+        <h1>Малка Корец</h1>
         <h2>Копирайтер</h2>
       </a>'.$menu.'
 </header>

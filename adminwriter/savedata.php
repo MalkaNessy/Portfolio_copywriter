@@ -13,7 +13,8 @@ mysql_real_escape_string($_POST["title"])  .'"'.
 mysql_real_escape_string($_POST["content"])  .'"'. 
 ' , button_name = "'. 
 mysql_real_escape_string($_POST["button_name"])  .'"'.
-
+' , a = "'. 
+mysql_real_escape_string($_POST["a"])  .'"'.
     
 ' WHERE ID = "'.
 mysql_real_escape_string($_POST["ID"])  .'"
@@ -30,7 +31,7 @@ mysql_query($sql);
 
 mysql_close($link);
 
-header('Location:index.php');
+header('Location:admin.php');
 
 
 ?>
