@@ -1,10 +1,10 @@
 <?php
 
 require_once("connection.php");
-$link = dbconnect();
+$link = dbconnect(); //подключение к базе данных
 
 
-$page = "intro";
+$page = "intro"; 
 function ispagename($str)
 {
   return preg_match("/^[0-9A-Za-z_]+$/",$str);
