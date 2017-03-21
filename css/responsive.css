@@ -47,26 +47,26 @@
   
 }
 
-@media screen and (min-width: 660px) {
+@media screen and (min-width: 720px) {
 
 /****************************
-PAGE: ABOUT
+PAGE: ABOUT  min-width: 660px
 *****************************/
 
   nav {
       background: none;
       float:right;
       font-size: 1.125em;
-      margin-right: 5%;
+      margin-right: 4%;
       text-align: right;
-      width: 45%;
+      width: 50%;
   }
   
   #logo {
     float: left;
     margin-left: 5%;
     text-align: left;
-    width: 45%;
+    width: 40%;
   }
 
   h1 {
@@ -78,9 +78,19 @@ PAGE: ABOUT
     margin-bottom: 20px;
   }
   
+ #topic {
+	 display: block;
+ }
+  
+  #topic h3 {
+	font-style: italic;
+	font-size: 1.3em;
+}
+  
   header {
     border-bottom: 5px solid #599a68;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
   }
 }
-    
+
+  
