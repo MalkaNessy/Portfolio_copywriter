@@ -47,7 +47,53 @@ $includes = '<link rel="stylesheet" href="css/normalize.css" >'.
 '<link rel="stylesheet" href="css/responsive.css">';
 
 /*  */
+if ($page == "intro"){
+	
+	$body = '<header>
+	    <a href="" id="logo">
+        <h1>main page</h1>
+        <h2>Копирайтер</h2>
+      </a>'.$menu.'
+</header>
+<div id="wrapper" >
+	<div id="topic"> 
+	  <h3>"Жизнь коротка. Нет времени оставлять важные слова несказанными." Пауло Коэльо.</h3>
+	</div>
+  <div id="content" style="font-size: 13.3333px;">'.
+	'<ul id="gallery">
+		<li><a href=""><img src="http://test1.ru/Copywriter/img/happy.jpg" alt=""><p>... похвастаться своими детьми</p></a></li>
+		<li><a href="http://test1.ru/Copywriter/example2.html"><img src="http://test1.ru/Copywriter/img/family.jpg" alt=""><p>... сохранить воспоминания предков</p></a></li>
+		<li><a href=""><img src="http://test1.ru/Copywriter/img/interesting.jpg" alt=""><p>... рассказать о вашем интересном проекте</p></a></li>
+		<li><a href=""><img src="http://test1.ru/Copywriter/img/sad.jpg" alt=""><p>... переосмыслить жизненный опыт</p></a></li>
+		<li><a href=""><img src="http://test1.ru/Copywriter/img/bus.jpg" alt=""><p>... взять интервью о вашем бизнесе</p></a></li>
+		<li><a href=""><img src="http://test1.ru/Copywriter/img/life.jpg" alt=""><p>... утешить боль воспоминаний</p></a></li>
+		<li><a href=""><img src="http://test1.ru/Copywriter/img/teacher.png" alt=""><p>... выразить благодарность</p></a></li>
+		<li><a href=""><img src="http://test1.ru/Copywriter/img/love.jpg" alt=""><p>... рассказать, как папа с мамой познакомились</p></a></li>
+	</ul>
+  </div>
+  <footer style="font-size: 13.3333px;"><p>© 2016 Malka Korets</p></footer>
 
+	
+  
+</div>
+
+';
+
+$html = '<!DOCTYPE html>
+<html>
+	<head> 
+	  <meta charset="utf-8">
+	  <title>Malka Korets | Copywriter</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">'.
+$includes.'</head> <body>'.$body.'</body></html>';
+
+
+
+echo $html;
+mysql_close($link); 
+	
+}
+else{
 
 $body = '<header>
 	    <a href="" id="logo">
@@ -74,5 +120,5 @@ $includes.'</head> <body>'.$body.'</body></html>';
 
 
 echo $html;
-mysql_close($link); 
+mysql_close($link); }
 ?>
