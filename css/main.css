@@ -184,7 +184,7 @@ PAGE: EXAMPLE
 
 }
 
-.content {
+#content {
 	/* background-color: yellow; */
 	border-left: 80px solid tan;
 	padding:0 0.8em;

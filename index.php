@@ -25,6 +25,7 @@ if (!($current_row)) {
 $result = mysql_query("SELECT * FROM examples");
 
 $menu = '';
+$gallery='';
 
  while ($row = mysql_fetch_array($result))
 	{
@@ -36,15 +37,16 @@ $menu = '';
 		$menu =  $menu. '<li><a href="'.'index.php?page='.$row['title_url'].'" '.$class.' >'.$row['button_name'].'</a>
 					
 		</li>';}
-	}; 
-	
- while ($gal = mysql_fetch_array($result))
-	{
-		if ($gal['gal']){
-		$gallery =  $gallery. '<li><a href="'.'index.php?page='.$gal['title_url'].'" ><img src="http://test1.ru/Copywriter/img/'.$gal['a'].'" alt=""><p>'.$gal['button_name'].'</p></a>
+		if ($row['gal']){
+		$gallery =  $gallery. '<li><a href="'.'index.php?page='.$row['title_url'].'" ><img src="http://test1.ru/Copywriter/img/'.$row['a'].'" alt=""><p>'.$row['button_name'].'</p></a>
 					
 		</li>';}
+		
 	}; 
+
+
+	
+ 
 	
 $menu='<nav><ul>'.$menu.'</ul></nav> ';	
 
@@ -69,14 +71,7 @@ if ($page == "intro"){
 	</div>
   <div id="content" style="font-size: 13.3333px;">'.
 	'<ul id="gallery">
-		<li><a href=""><img src="http://test1.ru/Copywriter/img/happy.jpg" alt=""><p>... похвастаться своими детьми</p></a></li>
-		<li><a href="http://test1.ru/Copywriter/example2.html"><img src="http://test1.ru/Copywriter/img/family.jpg" alt=""><p>... сохранить воспоминания предков</p></a></li>
-		<li><a href=""><img src="http://test1.ru/Copywriter/img/interesting.jpg" alt=""><p>... рассказать о вашем интересном проекте</p></a></li>
-		<li><a href=""><img src="http://test1.ru/Copywriter/img/sad.jpg" alt=""><p>... переосмыслить жизненный опыт</p></a></li>
-		<li><a href=""><img src="http://test1.ru/Copywriter/img/bus.jpg" alt=""><p>... взять интервью о вашем бизнесе</p></a></li>
-		<li><a href=""><img src="http://test1.ru/Copywriter/img/life.jpg" alt=""><p>... утешить боль воспоминаний</p></a></li>
-		<li><a href=""><img src="http://test1.ru/Copywriter/img/teacher.png" alt=""><p>... выразить благодарность</p></a></li>
-		<li><a href=""><img src="http://test1.ru/Copywriter/img/love.jpg" alt=""><p>... рассказать, как папа с мамой познакомились</p></a></li>
+		'.$gallery.'
 	</ul>
   </div>
   <footer style="font-size: 13.3333px;"><p>© 2016 Malka Korets</p></footer>
