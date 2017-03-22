@@ -38,6 +38,14 @@ $menu = '';
 		</li>';}
 	}; 
 	
+ while ($gal = mysql_fetch_array($result))
+	{
+		if ($gal['gal']){
+		$gallery =  $gallery. '<li><a href="'.'index.php?page='.$gal['title_url'].'" ><img src="http://test1.ru/Copywriter/img/'.$gal['a'].'" alt=""><p>'.$gal['button_name'].'</p></a>
+					
+		</li>';}
+	}; 
+	
 $menu='<nav><ul>'.$menu.'</ul></nav> ';	
 
 $content =$current_row['content'];
