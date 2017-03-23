@@ -33,7 +33,7 @@ $includes = '<link href="style-admin.css" rel="stylesheet">'.
 $body = '<form action="savedata.php" method="post"><span class="formname">Надпись на кнопке или в превью: </span><input name="button_name" type="text" value="'   .$row["button_name"]. '"> <br>'. PHP_EOL .
 '<input name="title_url" value="'   .$row["title_url"]. '" type="hidden" > <br>'. PHP_EOL .
 
-'<span class="formname">Ссылка в тексте статьи: </span><textarea name="short" type="text" rows="2" cols="80" >'   .$row["a"]. ' </textarea> <br>'. PHP_EOL .
+'<span class="formname">Картинка: </span><textarea name="a" type="text"  cols="80" >'   .$row["a"]. ' </textarea> <br>'. PHP_EOL .
 
 '<span class="formname">Заголовок статьи: <br></span><textarea name="title" type="text" cols="80"  >'   .$row["title"]. ' </textarea><br>'. PHP_EOL .
 '<span class="formname">Текст статьи: </span><br><textarea name="content" id="data_content" rows="25" cols="100"> '   .$row["content"]. '</textarea> <br>'. PHP_EOL .

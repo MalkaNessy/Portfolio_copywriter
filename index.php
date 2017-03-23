@@ -87,6 +87,7 @@ $html = '<!DOCTYPE html>
 	<head> 
 	  <meta charset="utf-8">
 	  <title>Malka Korets | Copywriter</title>
+	  <base target="_blank"> 
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">'.
 $includes.'</head> <body>'.$body.'</body></html>';
 
