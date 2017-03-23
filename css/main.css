@@ -194,6 +194,10 @@ PAGE: EXAMPLE
 	
 }
 
+#content a {
+	target: _blank;
+}
+
 .intro {
 	font-style: italic;
 	

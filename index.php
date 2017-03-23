@@ -69,11 +69,10 @@ if ($page == "intro"){
 	<div id="topic"> 
 	  <h3>"Жизнь коротка. Нет времени оставлять важные слова несказанными." Пауло Коэльо.</h3>
 	</div>
-  <div id="content" style="font-size: 13.3333px;">'.
-	'<ul id="gallery">
+  <ul id="gallery">
 		'.$gallery.'
 	</ul>
-  </div>
+  
   <footer style="font-size: 13.3333px;"><p>© 2016 Malka Korets</p></footer>
 
 	
@@ -112,6 +111,7 @@ $body = '<header>
 	</div>
   <div id="content" >'.
 	$content.'</div>
+	<footer style="font-size: 13.3333px;"><p>© 2016 Malka Korets</p></footer>
 </div>';
 
 $html = '<!DOCTYPE html>
