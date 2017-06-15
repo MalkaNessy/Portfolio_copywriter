@@ -26,7 +26,7 @@ $result = mysql_query("SELECT * FROM examples");
 
 $menu = '';
 $gallery='';
-
+$main_title = "index.php?page=intro";
  while ($row = mysql_fetch_array($result))
 	{
 		$class ='';
@@ -60,10 +60,10 @@ $includes = '<link rel="stylesheet" href="css/normalize.css" >'.
 if ($page == "intro"){
 	
 	$body = '<header>
-	    <a href="" id="logo">
-        <h1>main page</h1>
+	<a href="" id="logo">
+        <h1>Малка Корец</h1>
         <h2>Копирайтер</h2>
-      </a>'.$menu.'
+    </a>'.$menu.'
 </header>
 <div id="wrapper" >
 	<div id="topic"> 
@@ -86,7 +86,7 @@ $html = '<!DOCTYPE html>
 	<head> 
 	  <meta charset="utf-8">
 	  <title>Malka Korets | Copywriter</title>
-	  <base target="_blank"> 
+	  <base target="_self"> 
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">'.
 $includes.'</head> <body>'.$body.'</body></html>';
 
@@ -99,7 +99,7 @@ mysql_close($link);
 else{
 
 $body = '<header>
-	    <a href="" id="logo">
+	    <a href='.$main_title.' id="logo">
         <h1>Малка Корец</h1>
         <h2>Копирайтер</h2>
       </a>'.$menu.'
