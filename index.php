@@ -1,24 +1,24 @@
 <?php
 
-require_once("connection.php");
-$link = dbconnect(); //подключение к базе данных
+require_once("connection.php");//will check if the file "connection.php" has already been included
+$link = dbconnect(); // connect to Data Base
 
 
-$page = "intro"; 
-function ispagename($str)
+$page = "intro";// to use with URL 
+function ispagename($str)// check sympols in URL 
 {
   return preg_match("/^[0-9A-Za-z_]+$/",$str);
 }
 
-if( isset($_GET['page']))
+if( isset($_GET['page']))// check the 'page'=part of URL and rewrite the variable 
 {
 $page1 = $_GET['page'];
 	if (ispagename($page1)){
 		$page = $page1;
 	}
 }
-$current_res = mysql_query("SELECT * FROM examples WHERE title_url = '$page' ");
-$current_row = mysql_fetch_array($current_res);
+$current_res = mysql_query("SELECT * FROM examples WHERE title_url = '$page' ");//select from DataBase according to the 'page' field. 
+$current_row = mysql_fetch_array($current_res);//taking one row from table, where title_url == 'page' (remember, this is current URL)
 if (!($current_row)) {
 	die('Page not found ' );
 }
@@ -26,7 +26,9 @@ $result = mysql_query("SELECT * FROM examples");
 
 $menu = '';
 $gallery='';
-$main_title = "index.php?page=intro";
+$main_title = "index.php?page=intro";//site title alwayse has link to main page
+
+//generate menu and gallery 
  while ($row = mysql_fetch_array($result))
 	{
 		$class ='';
@@ -47,16 +49,18 @@ $main_title = "index.php?page=intro";
 
 	
  
+//generate menu on page		
+$menu='<nav><ul>'.$menu.'</ul></nav> ';
 	
-$menu='<nav><ul>'.$menu.'</ul></nav> ';	
-
+//generate content (texts) on page
 $content =$current_row['content'];
 
+//generate part of header: included files
 $includes = '<link rel="stylesheet" href="css/normalize.css" >'.
 '<link rel="stylesheet" href="css/main.css" >'.
 '<link rel="stylesheet" href="css/responsive.css">';
 
-/*  */
+//generate main page
 if ($page == "intro"){
 	
 	$body = '<header>
@@ -96,6 +100,8 @@ echo $html;
 mysql_close($link); 
 	
 }
+
+//generate all pages exept main page
 else{
 
 $body = '<header>
