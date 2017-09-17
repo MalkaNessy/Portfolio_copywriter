@@ -1,6 +1,4 @@
 <<<<<<< HEAD
-# YourOwnWriter
-
 My copywriting - portfolio.
 
 
